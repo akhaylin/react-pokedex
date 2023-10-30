@@ -20,3 +20,4 @@ function Pokedex({ pokemon = pokeArr }) {
 }
 
 export default Pokedex;
+export {pokeArr};
