@@ -8,7 +8,7 @@ function Pokecard({ pokemon }) {
 
     const image = `${ BASE_URL }${ id }.png`;
     return (
-        <Card bg={"primary"}>
+        <Card border="primary" style={{ width: '18rem' }}>
             < h2 > {name}</h2 >
             <Card.Img src={image} alt={name + "image"} />
             <h3>{type}</h3>

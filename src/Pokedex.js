@@ -16,10 +16,13 @@ const pokeArr = [
 
 function Pokedex({ pokemon = pokeArr, className, isWinner }) {
     return (
-        <Row>
+        <div className="Pokedex">
+            <div className="Pokedex-cards">
             {pokemon.map(p => <Pokecard pokemon={p} />)}
             {isWinner === true && <h2>THIS HAND WINS!</h2>}
-        </Row>
+            </div>
+
+        </div>
     );
 }
 
