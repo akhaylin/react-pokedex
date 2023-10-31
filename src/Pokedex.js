@@ -1,4 +1,7 @@
 import Pokecard from "./Pokecard";
+import "./Pokedex.css";
+import Row from 'react-bootstrap/Row';
+
 const pokeArr = [
     { id: 4, name: 'Charmander', type: 'fire', base_experience: 62 },
     { id: 7, name: 'Squirtle', type: 'water', base_experience: 63 },
@@ -11,13 +14,14 @@ const pokeArr = [
 ];
 
 
-function Pokedex({ pokemon = pokeArr }) {
+function Pokedex({ pokemon = pokeArr, className, isWinner }) {
     return (
-        <div>
+        <Row>
             {pokemon.map(p => <Pokecard pokemon={p} />)}
-        </div>
+            {isWinner === true && <h2>THIS HAND WINS!</h2>}
+        </Row>
     );
 }
 
 export default Pokedex;
-export {pokeArr};
+export { pokeArr };

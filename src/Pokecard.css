@@ -1,11 +1,11 @@
 .Pokecard {
-    background-color: grey;
-    margin: 1rem;
+
+    margin: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    z-index: 2;
 }
 
 img {

@@ -1,12 +1,12 @@
 import Pokegame from "./Pokegame.js";
-import './App.css';
+import Container from 'react-bootstrap/Container';
 
 function App() {
   return (
-    <div>
+    <Container>
       <h1>Pokemon</h1>
       <Pokegame />
-    </div>
+    </Container>
   );
 }
 
